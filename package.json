@@ -1,0 +1,20 @@
+{
+  "name": "todo",
+  "version": "0.1.0",
+  "description": "Todo web app using Nerve.",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "github:nervekit/todo",
+  "author": "Sam Leavens",
+  "license": "MIT",
+  "dependencies": {
+    "nerve": "file:../nerve"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
