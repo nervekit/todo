@@ -5,13 +5,14 @@
   "main": "src/app.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon src/app.js -w ./src -w ../nerve",
+    "start": "nodemon --exec node --env-file=.env src/app.js -w ./src -w ../nerve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "github:nervekit/todo",
   "author": "Sam Leavens",
   "license": "MIT",
   "dependencies": {
+    "mongoose": "^8.6.1",
     "nerve": "file:../nerve"
   },
   "devDependencies": {
