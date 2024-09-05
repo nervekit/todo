@@ -2,10 +2,10 @@
   "name": "todo",
   "version": "0.1.0",
   "description": "Todo web app using Nerve.",
-  "main": "src/app.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon --exec node --env-file=.env src/app.js -w ./src -w ../nerve",
+    "start": "nodemon --exec node --env-file=.env index.js -w ./src -w ../nerve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "github:nervekit/todo",
@@ -16,6 +16,7 @@
     "nerve": "file:../nerve"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.3"
   }
 }

@@ -1,7 +1,7 @@
 import mongoose from "mongoose"
+import {db} from "nerve";
 
-export const name = "Todo";
-export const schema = new mongoose.Schema({
+const schema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
@@ -12,4 +12,4 @@ export const schema = new mongoose.Schema({
   }
 });
 
-
+export const Todo = db.model("Todo", schema);
