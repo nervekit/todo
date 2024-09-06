@@ -1,14 +1,13 @@
-import {Todo} from "../../models/todo.js";
+import { Todo } from "../../models/todo.js";
 
 export default async (title) => {
-  await Todo.create({title: title})
-}
+  const doc = await Todo.create({ title: title });
+  return { id: doc.id };
+};
 
 export const schema = {
   type: "array",
-  items: [
-    {type: "string", minLength: 1, maxLength: 128},
-  ],
+  items: [{ type: "string", minLength: 1, maxLength: 128 }],
   minItems: 1,
   maxItems: 1,
 };
